@@ -6,6 +6,7 @@
 
 use Drupal\Core\Entity\EntityStorageException;
 use Drupal\Core\Extension\ModuleInstaller;
+use Drupal\Core\Utility\UpdateException;
 use Drupal\imageapi_optimize\Entity\ImageAPIOptimizePipeline;
 
 /**
@@ -66,4 +67,41 @@ function premium_profile_install() {
   }
 
   drupal_flush_all_caches();
+}
+
+/**
+ * Install Premium Core and Promote Disable
+ */
+function premium_profile_update_9001(&$sandbox) {
+  /** @var \Drupal\Core\Extension\ModuleInstaller $installer */
+  $installer = \Drupal::service('module_installer');
+  $module_data = \Drupal::service('extension.list.module')->reset()->getList();
+  if (empty($module_data['premium_core'])) {
+    throw new UpdateException('You need to add Premium Core to the project "composer require novicell/premium_core"');
+  }
+  if (empty($module_data['promote_disable'])) {
+    throw new UpdateException('You need to add Promote Disable to the project "composer require drupal/promote_disable"');
+  }
+  $installer->install(['premium_core', 'promote_disable']);
+
+  $config_names = ['block.block.premium_theme_pageheader', 'block.block.premium_theme_breadcrumbs'];
+  foreach ($config_names as $config_name) {
+    $config = \Drupal::configFactory()
+      ->getEditable($config_name);
+    $settings = $config->get('settings');
+    $settings['provider'] = 'premium_core';
+    $config->set('settings', $settings);
+    $dependencies = $config->get('dependencies');
+    $dependencies['module'] = ['premium_core'];
+    $config->set('dependencies', $dependencies);
+    $config->save();
+  }
+
+  $config_path = drupal_get_path('profile', 'premium_profile') . '/config/install';
+  $config_source = new FileStorage($config_path);
+
+  /** @var \Drupal\Core\Config\CachedStorage $config_storage */
+  $config_storage = \Drupal::service('config.storage');
+  $config_storage->write('promote_disable.settings', $config_source->read('promote_disable.settings'));
+
 }
