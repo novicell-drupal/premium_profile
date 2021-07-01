@@ -114,4 +114,5 @@ install:
   - imageapi_optimize
 themes:
   - adminimal_theme
+  - PROJECT_NAME
 keep_english: true
