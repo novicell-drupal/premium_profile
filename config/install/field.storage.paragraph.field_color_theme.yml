@@ -2,17 +2,15 @@ langcode: en
 status: true
 dependencies:
   module:
-    - dynamic_key_value
     - paragraphs
+    - styles
 id: paragraph.field_color_theme
 field_name: field_color_theme
 entity_type: paragraph
-type: dynamic_key_value
+type: styles
 settings:
-  collection: color_themes
-  allowed_values: {  }
-  allowed_values_function: ''
-module: dynamic_key_value
+  collection: color_theme
+module: styles
 locked: false
 cardinality: 1
 translatable: true

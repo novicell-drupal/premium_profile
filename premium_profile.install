@@ -23,7 +23,7 @@ function premium_profile_install() {
   standard_install();
 
   // Can add code in here to make nodes, terms, etc.
-  $theme = 'PROJECT_NAME';
+  $theme = getenv('PROJECT_NAME');
 
   \Drupal::service('theme_installer')->install([$theme]);
 

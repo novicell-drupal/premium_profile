@@ -12,9 +12,9 @@ dependencies:
     - field.field.paragraph.basic_hero.field_text_position
     - paragraphs.paragraphs_type.basic_hero
   module:
-    - dynamic_color
     - media_library
     - premium_tools
+    - styles
     - text
 id: paragraph.basic_hero.default
 targetEntityType: paragraph
@@ -32,7 +32,7 @@ content:
     weight: 7
     settings: {  }
     third_party_settings: {  }
-    type: dynamic_key_value_color_widget
+    type: styles
     region: content
   field_cta:
     weight: 4

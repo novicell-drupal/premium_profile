@@ -112,6 +112,7 @@ install:
   - view_unpublished
   - premium_search
   - status_feed
+  - styles
   - imageapi_optimize
 themes:
   - adminimal_theme
