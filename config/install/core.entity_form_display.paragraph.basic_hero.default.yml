@@ -8,12 +8,10 @@ dependencies:
     - field.field.paragraph.basic_hero.field_link
     - field.field.paragraph.basic_hero.field_overlay
     - field.field.paragraph.basic_hero.field_text
-    - field.field.paragraph.basic_hero.field_text_color
     - field.field.paragraph.basic_hero.field_text_position
     - paragraphs.paragraphs_type.basic_hero
   module:
     - media_library
-    - premium_tools
     - styles
     - text
 id: paragraph.basic_hero.default
@@ -29,7 +27,7 @@ content:
     third_party_settings: {  }
     region: content
   field_color_theme:
-    weight: 7
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: styles
@@ -39,9 +37,9 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
-      target_blank: 0
+      style: ''
     third_party_settings: {  }
-    type: link_with_target
+    type: styles_link
     region: content
   field_overlay:
     weight: 2
@@ -58,17 +56,11 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_text_color:
-    weight: 6
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_text_position:
     weight: 5
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: styles
     region: content
   translation:
     weight: 3

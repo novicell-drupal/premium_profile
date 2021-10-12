@@ -3,13 +3,14 @@ status: true
 dependencies:
   module:
     - paragraphs
-    - premium_tools
+    - styles
 id: paragraph.field_cta
 field_name: field_cta
 entity_type: paragraph
-type: link_with_target
-settings: {  }
-module: premium_tools
+type: styles_link
+settings:
+  collection: button_style
+module: styles
 locked: false
 cardinality: 1
 translatable: true

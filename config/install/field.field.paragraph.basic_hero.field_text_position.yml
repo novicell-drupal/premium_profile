@@ -5,7 +5,7 @@ dependencies:
     - field.storage.paragraph.field_text_position
     - paragraphs.paragraphs_type.basic_hero
   module:
-    - options
+    - styles
 id: paragraph.basic_hero.field_text_position
 field_name: field_text_position
 entity_type: paragraph
@@ -16,7 +16,7 @@ required: true
 translatable: true
 default_value:
   -
-    value: left
+    value: hero--left
 default_value_callback: ''
 settings: {  }
-field_type: list_string
+field_type: styles
