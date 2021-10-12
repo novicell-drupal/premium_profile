@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.basic_hero.field_link
     - field.field.paragraph.basic_hero.field_overlay
     - field.field.paragraph.basic_hero.field_text
+    - field.field.paragraph.basic_hero.field_text_color
     - field.field.paragraph.basic_hero.field_text_position
     - paragraphs.paragraphs_type.basic_hero
   module:
@@ -63,4 +64,5 @@ content:
 hidden:
   field_link: true
   field_overlay: true
+  field_text_color: true
   search_api_excerpt: true

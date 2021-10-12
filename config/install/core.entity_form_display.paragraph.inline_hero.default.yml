@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.inline_hero.field_cta
     - field.field.paragraph.inline_hero.field_overlay
     - field.field.paragraph.inline_hero.field_text
+    - field.field.paragraph.inline_hero.field_text_color
     - field.field.paragraph.inline_hero.field_text_position
     - field.field.paragraph.inline_hero.field_title
     - paragraphs.paragraphs_type.inline_hero
@@ -57,5 +58,6 @@ content:
     region: content
 hidden:
   created: true
+  field_text_color: true
   field_title: true
   status: true
