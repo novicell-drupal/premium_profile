@@ -106,3 +106,23 @@ function premium_profile_update_9001(&$sandbox) {
   $config_storage->write('promote_disable.settings', $config_source->read('promote_disable.settings'));
 
 }
+
+/**
+ * Prepare Styles migration
+ */
+function premium_profile_update_9002(&$sandbox) {
+  /** @var \Drupal\Core\Extension\ModuleInstaller $installer */
+  $installer = \Drupal::service('module_installer');
+  $module_data = \Drupal::service('extension.list.module')->reset()->getList();
+  if (empty($module_data['styles'])) {
+    throw new UpdateException('You need to add Styles to the project "composer require novicell/styles"');
+  }
+  $installer->install(['styles']);
+
+  /** @var \Drupal\styles\StylesManager $stylesManager */
+  $stylesManager = \Drupal::service('styles.manager');
+  $stylesManager->rebuild();
+  if (empty($stylesManager->getCollection('color_theme'))) {
+    throw new UpdateException('Color themes does not exist in Styles. Follow https://novicell.atlassian.net/wiki/spaces/TD/pages/3316777100/Premium+2.0+-+Premium+2.1');
+  }
+}
