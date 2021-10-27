@@ -43,6 +43,7 @@ function premium_profile_install() {
     'content_hierarchy_path',
     'content_hierarchy_breadcrumb',
     'ie_warning',
+    'premium_articles',
     'premium_maps'
   ];
   $installed_modules = [];
