@@ -34,6 +34,11 @@ function premium_profile_install() {
 
   /** @var \Drupal\Core\Extension\ModuleInstaller $installer */
   $installer = \Drupal::service('module_installer');
+
+  // Uninstall modules from the standard profile that we don't use
+  $installer->uninstall(['quickedit', 'history']);
+
+  // Install optional modules that are present
   $module_data = \Drupal::service('extension.list.module')->reset()->getList();
   $optional_modules = [
     'gtm',
