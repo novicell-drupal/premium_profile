@@ -10,7 +10,7 @@ id: paragraph.inline_hero.field_text_position
 field_name: field_text_position
 entity_type: paragraph
 bundle: inline_hero
-label: 'Text Position'
+label: 'Text position'
 description: ''
 required: true
 translatable: false
