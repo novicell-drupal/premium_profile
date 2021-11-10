@@ -245,6 +245,9 @@ function premium_profile_deploy_implement_styles() {
   $paragraphs = Paragraph::loadMultiple($pids);
   /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
   foreach ($paragraphs as $paragraph) {
+    if (empty($themes[$paragraph->id()])) {
+      continue;
+    }
     $value = $themes[$paragraph->id()];
     $value[0]['value'] = 'theme-' . $value[0]['value'];
     $paragraph->set('field_color_theme', $value);
@@ -257,6 +260,9 @@ function premium_profile_deploy_implement_styles() {
   $paragraphs = Paragraph::loadMultiple($inner_pids);
   /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
   foreach ($paragraphs as $paragraph) {
+    if (empty($inner_positions[$paragraph->id()])) {
+      continue;
+    }
     $value = $inner_positions[$paragraph->id()];
     $value[0]['value'] = 'hero--' . $value[0]['value'];
     $paragraph->set('field_text_position', $value);
