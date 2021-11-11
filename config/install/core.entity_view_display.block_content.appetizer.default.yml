@@ -11,7 +11,7 @@ dependencies:
     - field.field.block_content.appetizer.field_appetizer_text_alignment
   module:
     - options
-    - premium_tools
+    - styles
     - text
 id: block_content.appetizer.default
 targetEntityType: block_content
@@ -23,7 +23,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: link_with_target
+    type: styles_link
     region: content
   field_appetizer_headline:
     weight: 2

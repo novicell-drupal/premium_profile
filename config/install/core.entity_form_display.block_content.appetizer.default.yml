@@ -11,7 +11,7 @@ dependencies:
     - field.field.block_content.appetizer.field_appetizer_text_alignment
   module:
     - media_library
-    - premium_tools
+    - styles
     - text
 id: block_content.appetizer.default
 targetEntityType: block_content
@@ -25,7 +25,7 @@ content:
       placeholder_title: ''
       target_blank: 0
     third_party_settings: {  }
-    type: link_with_target
+    type: styles_link
     region: content
   field_appetizer_headline:
     weight: 0
