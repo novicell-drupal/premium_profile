@@ -37,7 +37,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: styles_link
+    type: styles_link_target
     region: content
   field_overlay:
     weight: 2

@@ -18,7 +18,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: styles_link
+    type: styles_link_target
     region: content
   field_button_alignment:
     weight: 1

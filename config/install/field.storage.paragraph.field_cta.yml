@@ -7,7 +7,7 @@ dependencies:
 id: paragraph.field_cta
 field_name: field_cta
 entity_type: paragraph
-type: styles_link
+type: styles_link_target
 settings:
   collection: button_style
 module: styles

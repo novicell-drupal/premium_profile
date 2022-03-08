@@ -7,7 +7,7 @@ dependencies:
 id: block_content.field_button
 field_name: field_button
 entity_type: block_content
-type: styles_link
+type: styles_link_target
 settings:
   collection: button_style
 module: styles

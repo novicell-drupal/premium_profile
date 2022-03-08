@@ -10,7 +10,7 @@ id: block_content.appetizer.field_appetizer_cta
 field_name: field_appetizer_cta
 entity_type: block_content
 bundle: appetizer
-label: CTA
+label: Call to action button
 description: ''
 required: false
 translatable: false
@@ -19,4 +19,4 @@ default_value_callback: ''
 settings:
   link_type: '17'
   title: '2'
-field_type: styles_link
+field_type: styles_link_target

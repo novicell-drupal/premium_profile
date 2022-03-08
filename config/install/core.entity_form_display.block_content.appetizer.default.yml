@@ -23,9 +23,10 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+      style: ''
       target_blank: 0
     third_party_settings: {  }
-    type: styles_link
+    type: styles_link_target
     region: content
   field_appetizer_headline:
     weight: 0
