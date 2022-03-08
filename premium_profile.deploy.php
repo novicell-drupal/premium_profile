@@ -351,7 +351,7 @@ function premium_profile_deploy_update_paragraph_cta() {
     'langcode' => \Drupal::languageManager()->getDefaultLanguage()->getId(),
     'entity_type' => 'paragraph',
     'type' => 'styles_link_target',
-    'settings' => ['collection' => 'color_theme'],
+    'settings' => ['collection' => 'button_style'],
     'module' => 'styles',
     'locked' => FALSE,
     'cardinality' => 1,
