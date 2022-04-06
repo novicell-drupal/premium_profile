@@ -3,6 +3,7 @@
 use Drupal\block_content\Entity\BlockContent;
 use Drupal\field\Entity\FieldConfig;
 use Drupal\field\Entity\FieldStorageConfig;
+use Drupal\field\FieldConfigInterface;
 use Drupal\layout_builder\Section;
 use Drupal\paragraphs\Entity\Paragraph;
 
@@ -333,6 +334,9 @@ function premium_profile_deploy_update_paragraph_cta() {
   $entityTypemanager = \Drupal::entityTypeManager();
 
   $field = FieldConfig::loadByName('paragraph', 'basic_hero', 'field_cta');
+  if ($field->get('type') != 'styles_link') {
+    return;
+  }
   if (!empty($field)) {
     $field->delete();
   }
@@ -351,7 +355,7 @@ function premium_profile_deploy_update_paragraph_cta() {
     'langcode' => \Drupal::languageManager()->getDefaultLanguage()->getId(),
     'entity_type' => 'paragraph',
     'type' => 'styles_link_target',
-    'settings' => ['collection' => 'button_style'],
+    'settings' => ['collection' => 'color_theme'],
     'module' => 'styles',
     'locked' => FALSE,
     'cardinality' => 1,
@@ -520,7 +524,11 @@ function premium_profile_deploy_update_blocks_cta() {
 
   $entityTypemanager = \Drupal::entityTypeManager();
 
+  /** @var FieldConfigInterface $field */
   $field = FieldConfig::loadByName('block_content', 'appetizer', 'field_appetizer_cta');
+  if ($field->get('type') != 'styles_link') {
+    return;
+  }
   if (!empty($field)) {
     $field->delete();
   }
