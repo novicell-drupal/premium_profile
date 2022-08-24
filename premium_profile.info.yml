@@ -33,7 +33,6 @@ install:
   - block
   - breakpoint
   - ckeditor
-  - color
   - config
   - contextual
   - layout_builder
