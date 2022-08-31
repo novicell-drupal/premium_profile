@@ -101,6 +101,7 @@ install:
   - search_api_exclude_entity
   - simple_sitemap
   - webform
+  - webform_ui
   - webp
   - atoms
   - dynamic_color
