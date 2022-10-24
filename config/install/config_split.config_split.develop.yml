@@ -6,6 +6,7 @@ label: Develop
 description: ''
 folder: ../config/develop
 module:
+  admin_toolbar_tools: 0
   devel: 0
   devel_generate: 0
   webform_devel: 0
