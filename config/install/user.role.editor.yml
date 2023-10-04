@@ -91,6 +91,7 @@ permissions:
   - 'update content translations'
   - 'update media'
   - 'use media icons'
+  - 'use text format basic_html'
   - 'use text format full_html'
   - 'view all media revisions'
   - 'view all revisions'
