@@ -32,7 +32,6 @@ install:
   - big_pipe
   - block
   - breakpoint
-  - ckeditor
   - config
   - contextual
   - layout_builder
@@ -67,16 +66,15 @@ install:
   - locale
   - config_translation
   - content_translation
-  - admin_toolbar
-  - adminimal_admin_toolbar
+  - gin_toolbar
+  - gin_lb
   - allowed_formats
   - autosave_form
-  - color_field
   - components
   - config_ignore
   - config_split
   - editor_advanced_link
-  - entity_clone
+  - content_entity_clone
   - entity_usage
   - field_group
   - focal_point
@@ -88,7 +86,6 @@ install:
   - linkit
   - metatag
   - noreferrer
-  - promote_disable
   - pathauto
   - paragraphs
   - paragraphs_asymmetric_translation_widgets
@@ -115,5 +112,6 @@ install:
   - styles
   - imageapi_optimize
 themes:
-  - adminimal_theme
+  - claro
+  - gin
 keep_english: true
