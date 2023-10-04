@@ -1,0 +1,6 @@
+toastify_loading: cdn
+enable_preview_regions: true
+hide_discard_button: true
+hide_revert_button: true
+save_behavior: default
+hide_discard_revert_buttons: 1
