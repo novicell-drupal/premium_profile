@@ -104,7 +104,7 @@ function premium_profile_update_9001(&$sandbox) {
     $config->save();
   }
 
-  $config_path = drupal_get_path('profile', 'premium_profile') . '/config/install';
+  $config_path = \Drupal::service('extension.list.profile')->getPath('premium_profile') . '/config/install';
   $config_source = new FileStorage($config_path);
 
   /** @var \Drupal\Core\Config\CachedStorage $config_storage */
