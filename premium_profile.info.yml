@@ -32,6 +32,7 @@ install:
   - big_pipe
   - block
   - breakpoint
+  - ckeditor5
   - config
   - contextual
   - layout_builder
