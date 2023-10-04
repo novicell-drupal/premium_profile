@@ -93,7 +93,6 @@ install:
   - redis
   - role_delegation
   - scheduled_transitions
-  - search
   - search_api
   - search_api_page
   - search_api_exclude_entity
