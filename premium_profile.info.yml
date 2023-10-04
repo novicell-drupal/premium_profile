@@ -1,7 +1,7 @@
 name: 'Drupal Premium'
 type: profile
 description: 'Install the Drupal Premium package from Novicell.'
-core_version_requirement: '^8.8 || ^9'
+core_version_requirement: '^8.8 || ^9 || ^10'
 version: VERSION
 
 # Optional: Declare your installation profile as a distribution
@@ -73,7 +73,7 @@ install:
   - config_ignore
   - config_split
   - editor_advanced_link
-  - content_entity_clone
+  - entity_clone
   - entity_usage
   - field_group
   - focal_point
