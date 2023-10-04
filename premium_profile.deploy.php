@@ -529,9 +529,6 @@ function premium_profile_deploy_update_blocks_cta() {
   if ($field->get('type') != 'styles_link') {
     return;
   }
-  if (!empty($field)) {
-    $field->delete();
-  }
 
   $field = FieldConfig::loadByName('block_content', 'button', 'field_button');
   if (!empty($field)) {
