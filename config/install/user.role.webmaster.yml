@@ -41,7 +41,6 @@ permissions:
   - 'create media'
   - 'create page content'
   - 'create remote_video media'
-  - 'create reusable blocks'
   - 'create url aliases'
   - 'create video media'
   - 'create webform'
