@@ -2,7 +2,10 @@ langcode: en
 status: true
 dependencies:
   enforced:
+    config:
+      - workflows.workflow.editorial
     module:
+      - content_moderation
       - role_delegation
       - scheduled_transitions
 id: webmaster
@@ -108,7 +111,6 @@ permissions:
   - 'use text format full_html'
   - 'view all media revisions'
   - 'view all revisions'
-  - 'view all scheduled transitions'
   - 'view any unpublished content'
   - 'view any unpublished page content'
   - 'view any webform submission'

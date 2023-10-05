@@ -2,7 +2,10 @@ langcode: en
 status: true
 dependencies:
   enforced:
+    config:
+      - workflows.workflow.editorial
     module:
+      - content_moderation
       - scheduled_transitions
 id: editor
 label: Editor
