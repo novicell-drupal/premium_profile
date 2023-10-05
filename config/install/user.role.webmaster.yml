@@ -1,13 +1,6 @@
 langcode: en
 status: true
-dependencies:
-  enforced:
-    config:
-      - workflows.workflow.editorial
-    module:
-      - content_moderation
-      - role_delegation
-      - scheduled_transitions
+dependencies: { }
 id: webmaster
 label: Webmaster
 weight: 4
@@ -26,7 +19,6 @@ permissions:
   - 'access webform help'
   - 'access webform overview'
   - 'access webform submission user'
-  - 'add scheduled transitions node page'
   - 'administer atoms'
   - 'administer menu'
   - 'administer nodes'
@@ -36,7 +28,6 @@ permissions:
   - 'administer users'
   - 'administer webform'
   - 'administer webform submission'
-  - 'assign webmaster role'
   - 'clone node entity'
   - 'configure all page node layout overrides'
   - 'configure any layout'
@@ -91,7 +82,6 @@ permissions:
   - 'edit own webform'
   - 'edit own webform submission'
   - 'edit webform assets'
-  - 'reschedule scheduled transitions node page'
   - 'revert all revisions'
   - 'revert page revisions'
   - 'select account cancellation method'
@@ -101,11 +91,6 @@ permissions:
   - 'update any media'
   - 'update content translations'
   - 'update media'
-  - 'use editorial transition archive'
-  - 'use editorial transition archived_draft'
-  - 'use editorial transition archived_published'
-  - 'use editorial transition create_new_draft'
-  - 'use editorial transition publish'
   - 'use media icons'
   - 'use text format basic_html'
   - 'use text format full_html'
@@ -119,6 +104,5 @@ permissions:
   - 'view own unpublished media'
   - 'view own webform submission'
   - 'view page revisions'
-  - 'view scheduled transitions node page'
   - 'view the administration theme'
   - 'view unpublished paragraphs'
