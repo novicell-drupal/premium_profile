@@ -67,7 +67,6 @@ install:
   - config_translation
   - content_translation
   - gin_toolbar
-  - gin_lb
   - allowed_formats
   - autosave_form
   - components
