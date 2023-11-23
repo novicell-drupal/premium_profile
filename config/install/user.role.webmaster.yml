@@ -8,6 +8,7 @@ dependencies:
   module:
     - node
     - scheduled_transitions
+    - role_delegation
 id: webmaster
 label: Webmaster
 weight: 4

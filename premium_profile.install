@@ -8,6 +8,7 @@ use Drupal\Core\Config\FileStorage;
 use Drupal\Core\Entity\EntityStorageException;
 use Drupal\Core\Utility\UpdateException;
 use Drupal\imageapi_optimize\Entity\ImageAPIOptimizePipeline;
+use Drupal\user\Entity\Role;
 
 /**
  * Implements hook_install().
@@ -73,6 +74,11 @@ function premium_profile_install() {
   }
 
   drupal_flush_all_caches();
+
+  $role_object = Role::load('webmaster');
+  $role_object->grantPermission('assign editor role');
+  $role_object->grantPermission('assign webmaster role');
+  $role_object->save();
 }
 
 /**
