@@ -1,7 +1,7 @@
 name: 'Drupal Premium'
 type: profile
 description: 'Install the Drupal Premium package from Novicell.'
-core_version_requirement: '^8.8 || ^9'
+core_version_requirement: '^8.8 || ^9 || ^10'
 version: VERSION
 
 # Optional: Declare your installation profile as a distribution
@@ -32,7 +32,7 @@ install:
   - big_pipe
   - block
   - breakpoint
-  - ckeditor
+  - ckeditor5
   - config
   - contextual
   - layout_builder
@@ -40,7 +40,6 @@ install:
   - menu_link_content
   - datetime
   - block_content
-  - quickedit
   - editor
   - help
   - image
@@ -67,11 +66,10 @@ install:
   - locale
   - config_translation
   - content_translation
+  - gin_toolbar
   - admin_toolbar
-  - adminimal_admin_toolbar
   - allowed_formats
   - autosave_form
-  - color_field
   - components
   - config_ignore
   - config_split
@@ -88,14 +86,12 @@ install:
   - linkit
   - metatag
   - noreferrer
-  - promote_disable
   - pathauto
   - paragraphs
   - paragraphs_asymmetric_translation_widgets
   - redirect
   - redis
   - role_delegation
-  - scheduled_transitions
   - search_api
   - search_api_page
   - search_api_exclude_entity
@@ -114,6 +110,8 @@ install:
   - status_feed
   - styles
   - imageapi_optimize
+  - scheduled_transitions
 themes:
-  - adminimal_theme
+  - claro
+  - gin
 keep_english: true
