@@ -13,10 +13,12 @@ use Drupal\paragraphs\Entity\Paragraph;
 function premium_profile_deploy_implement_styles() {
   $pids = \Drupal::entityQuery('paragraph')
     ->condition('type', 'basic_hero')
+    ->accessCheck(FALSE)
     ->execute();
 
   $inner_pids = \Drupal::entityQuery('paragraph')
     ->condition('type', 'inline_hero')
+    ->accessCheck(FALSE)
     ->execute();
 
   $paragraphs = Paragraph::loadMultiple($pids);

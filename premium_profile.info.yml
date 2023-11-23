@@ -67,6 +67,7 @@ install:
   - config_translation
   - content_translation
   - gin_toolbar
+  - admin_toolbar
   - allowed_formats
   - autosave_form
   - components
@@ -91,7 +92,6 @@ install:
   - redirect
   - redis
   - role_delegation
-  - scheduled_transitions
   - search_api
   - search_api_page
   - search_api_exclude_entity
@@ -110,6 +110,7 @@ install:
   - status_feed
   - styles
   - imageapi_optimize
+  - scheduled_transitions
 themes:
   - claro
   - gin
