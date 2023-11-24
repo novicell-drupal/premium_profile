@@ -76,12 +76,16 @@ function premium_profile_install() {
 
   drupal_flush_all_caches();
 
+  node_access_rebuild();
+
   if (Drupal::moduleHandler()->moduleExists('role_delegation')) {
     $role_object = Role::load('webmaster');
     $role_object->grantPermission('assign editor role');
     $role_object->grantPermission('assign webmaster role');
     $role_object->save();
   }
+
+  drupal_flush_all_caches();
 }
 
 /**
