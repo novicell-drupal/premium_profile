@@ -111,6 +111,7 @@ install:
   - styles
   - imageapi_optimize
   - scheduled_transitions
+  - health_check
 themes:
   - claro
   - gin
