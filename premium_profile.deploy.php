@@ -305,10 +305,12 @@ function premium_profile_deploy_implement_styles() {
 function premium_profile_deploy_update_paragraph_cta() {
   $pids = \Drupal::entityQuery('paragraph')
     ->condition('type', 'basic_hero')
+    ->accessCheck(FALSE)
     ->execute();
 
   $inner_pids = \Drupal::entityQuery('paragraph')
     ->condition('type', 'inline_hero')
+    ->accessCheck(FALSE)
     ->execute();
 
   $paragraphs = Paragraph::loadMultiple($pids);
@@ -481,14 +483,17 @@ function premium_profile_deploy_update_paragraph_cta() {
 function premium_profile_deploy_update_blocks_cta() {
   $appetizer_bids = \Drupal::entityQuery('block_content')
     ->condition('type', 'appetizer')
+    ->accessCheck(FALSE)
     ->execute();
 
   $button_bids = \Drupal::entityQuery('block_content')
     ->condition('type', 'button')
+    ->accessCheck(FALSE)
     ->execute();
 
   $teaser_bids = \Drupal::entityQuery('block_content')
     ->condition('type', 'teaser_navigation')
+    ->accessCheck(FALSE)
     ->execute();
 
   $blocks = BlockContent::loadMultiple($appetizer_bids);
