@@ -113,12 +113,14 @@ function premium_profile_update_9001(&$sandbox) {
     $config->save();
   }
 
-  $config_path = \Drupal::service('extension.list.profile')->getPath('premium_profile') . '/config/install';
-  $config_source = new FileStorage($config_path);
+  if (\Drupal::moduleHandler()->moduleExists('promote_disable')) {
+    $config_path = \Drupal::service('extension.list.profile')->getPath('premium_profile') . '/config/install';
+    $config_source = new FileStorage($config_path);
 
-  /** @var \Drupal\Core\Config\CachedStorage $config_storage */
-  $config_storage = \Drupal::service('config.storage');
-  $config_storage->write('promote_disable.settings', $config_source->read('promote_disable.settings'));
+    /** @var \Drupal\Core\Config\CachedStorage $config_storage */
+    $config_storage = \Drupal::service('config.storage');
+    $config_storage->write('promote_disable.settings', $config_source->read('promote_disable.settings'));
+  }
 }
 
 /**
