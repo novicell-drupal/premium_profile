@@ -318,6 +318,9 @@ function premium_profile_deploy_update_paragraph_cta() {
 
   /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
   foreach ($paragraphs as $paragraph) {
+    if (!$paragraph->hasField('field_cta')) {
+      return;
+    }
     $field = $paragraph->get('field_cta');
     if (!$field->isEmpty()) {
       $ctas[$paragraph->id()] = $field->getValue();
@@ -329,6 +332,9 @@ function premium_profile_deploy_update_paragraph_cta() {
 
   /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
   foreach ($paragraphs as $paragraph) {
+    if (!$paragraph->hasField('field_cta')) {
+      return;
+    }
     $field = $paragraph->get('field_cta');
     if (!$field->isEmpty()) {
       $inner_ctas[$paragraph->id()] = $field->getValue();
@@ -338,7 +344,7 @@ function premium_profile_deploy_update_paragraph_cta() {
   $entityTypemanager = \Drupal::entityTypeManager();
 
   $field = FieldConfig::loadByName('paragraph', 'basic_hero', 'field_cta');
-  if ($field->get('type') != 'styles_link') {
+  if (empty($field) || $field->get('type') != 'styles_link') {
     return;
   }
   if (!empty($field)) {
