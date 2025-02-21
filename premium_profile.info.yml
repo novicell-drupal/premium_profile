@@ -1,8 +1,8 @@
 name: 'Drupal Premium'
 type: profile
 description: 'Install the Drupal Premium package from Novicell.'
-core_version_requirement: '^8.8 || ^9 || ^10'
-version: VERSION
+core_version_requirement: '^11'
+version: "11.0"
 
 # Optional: Declare your installation profile as a distribution
 # This will make the installer auto-select this installation profile.
