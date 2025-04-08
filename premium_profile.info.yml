@@ -81,7 +81,7 @@ install:
   - hreflang
   - inline_block_title_automatic
   - layout_builder_at
-  - layout_builder_modal
+  - layout_builder_iframe_modal
   - layout_builder_restrictions
   - linkit
   - metatag
@@ -93,7 +93,6 @@ install:
   - redis
   - role_delegation
   - search_api
-  - search_api_page
   - search_api_exclude_entity
   - simple_sitemap
   - webform
