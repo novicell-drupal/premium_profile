@@ -5,5 +5,6 @@ dependencies:
     - media
 id: media.1_column_flex_height
 label: '1 column - dynamic height'
+description: null
 targetEntityType: media
 cache: true

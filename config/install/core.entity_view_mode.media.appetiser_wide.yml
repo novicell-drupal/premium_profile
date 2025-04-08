@@ -5,5 +5,6 @@ dependencies:
     - media
 id: media.appetiser_wide
 label: 'Appetiser wide'
+description: null
 targetEntityType: media
 cache: true

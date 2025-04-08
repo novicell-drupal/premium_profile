@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies:
+  module:
+    - status_feed
   enforced:
     module:
       - status_feed

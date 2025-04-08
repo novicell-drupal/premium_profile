@@ -6,8 +6,6 @@ dependencies:
     - field.field.block_content.accordion.field_accordion_headline
     - field.field.block_content.accordion.field_accordion_items
     - field.field.block_content.accordion.field_accordion_show_more
-  module:
-    - premium_theme_helper
 id: block_content.accordion.default
 targetEntityType: block_content
 bundle: accordion

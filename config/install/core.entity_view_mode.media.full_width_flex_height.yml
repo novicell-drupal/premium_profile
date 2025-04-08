@@ -5,5 +5,6 @@ dependencies:
     - media
 id: media.full_width_flex_height
 label: 'Full width - dynamic height'
+description: null
 targetEntityType: media
 cache: true

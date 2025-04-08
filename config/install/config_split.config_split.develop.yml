@@ -4,6 +4,9 @@ dependencies: {  }
 id: develop
 label: Develop
 description: ''
+weight: 0
+stackable: false
+storage: null
 folder: ../config/develop
 module:
   admin_toolbar_tools: 0
@@ -13,11 +16,6 @@ module:
   upgrade_status: 0
   webform_devel: 0
 theme: {  }
-blacklist:
-  - devel.settings
-  - devel.toolbar.settings
-  - system.menu.devel
-graylist: {  }
-graylist_dependents: true
-graylist_skip_equal: true
-weight: 0
+complete_list: {  }
+partial_list: {  }
+no_patching: false

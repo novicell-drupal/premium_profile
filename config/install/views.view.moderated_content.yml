@@ -1,12 +1,12 @@
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - content_moderation
   module:
     - node
     - user
+  enforced:
+    module:
+      - content_moderation
 id: moderated_content
 label: 'Moderated content'
 module: views

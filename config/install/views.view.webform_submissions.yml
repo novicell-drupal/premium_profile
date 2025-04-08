@@ -1,12 +1,12 @@
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - webform
   module:
     - user
     - webform
+  enforced:
+    module:
+      - webform
 id: webform_submissions
 label: 'Webform submissions'
 module: views

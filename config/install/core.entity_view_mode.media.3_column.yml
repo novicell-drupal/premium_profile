@@ -5,5 +5,6 @@ dependencies:
     - media
 id: media.3_column
 label: '3 column'
+description: null
 targetEntityType: media
 cache: true

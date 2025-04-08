@@ -2,13 +2,38 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.node.page.full
+    - filter.format.basic_html
+    - filter.format.full_html
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
     - node.type.page
     - workflows.workflow.editorial
-    - scheduled_transitions.settings
   module:
+    - atoms
+    - content_moderation
+    - content_translation
+    - contextual
+    - entity_clone
+    - file
+    - filter
+    - layout_builder
+    - media
+    - media_icons
+    - menu_link_content
     - node
-    - scheduled_transitions
+    - paragraphs
+    - path
+    - redirect
     - role_delegation
+    - system
+    - taxonomy
+    - toolbar
+    - view_unpublished
+    - webform
 id: webmaster
 label: Webmaster
 weight: 4
@@ -36,6 +61,8 @@ permissions:
   - 'administer users'
   - 'administer webform'
   - 'administer webform submission'
+  - 'assign editor role'
+  - 'assign webmaster role'
   - 'clone node entity'
   - 'configure all page node layout overrides'
   - 'configure any layout'

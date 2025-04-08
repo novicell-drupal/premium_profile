@@ -5,5 +5,6 @@ dependencies:
     - node
 id: node.inline_navigation
 label: 'Inline navigation'
+description: null
 targetEntityType: node
 cache: true
