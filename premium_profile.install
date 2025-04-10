@@ -50,6 +50,7 @@ function premium_profile_install() {
     'ie_warning',
     'premium_articles',
     'premium_headless',
+    'premium_search',
     'premium_maps'
   ];
   $installed_modules = [];

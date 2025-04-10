@@ -6,7 +6,6 @@ dependencies:
   module:
     - filter
     - media
-    - search_api_page
     - shortcut
     - system
 id: authenticated
@@ -18,4 +17,3 @@ permissions:
   - 'access shortcuts'
   - 'use text format basic_html'
   - 'view media'
-  - 'view search api pages'
