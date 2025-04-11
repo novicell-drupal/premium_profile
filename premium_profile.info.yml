@@ -83,6 +83,7 @@ install:
   - layout_builder_at
   - layout_builder_iframe_modal
   - layout_builder_restrictions
+  - layout_builder_restrictions_by_region
   - linkit
   - metatag
   - noreferrer

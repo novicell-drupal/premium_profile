@@ -40,14 +40,13 @@ cloneable_entities:
   - taxonomy_vocabulary
   - crop
   - crop_type
-  - metatag_defaults
-  - paragraph
-  - paragraphs_type
   - search_api_task
   - search_api_index
   - search_api_server
+  - metatag_defaults
+  - paragraph
+  - paragraphs_type
   - pathauto_pattern
-  - search_api_page
   - redirect
   - scheduled_transition
   - simple_sitemap
@@ -55,3 +54,5 @@ cloneable_entities:
   - webform_options
   - webform
   - webform_submission
+  - entity_overview
+  - search_api_autocomplete_search

@@ -18,14 +18,12 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: true
     enabled: true
+    allow_custom: true
   layout_builder_restrictions:
     allowed_block_categories:
-      - 'Chaos Tools'
       - 'Content fields'
       - 'Custom block types'
-      - Devel
       - Forms
       - Help
       - 'Inline blocks'
@@ -37,6 +35,26 @@ third_party_settings:
       - Webform
       - core
     entity_view_mode_restriction:
+      allowed_layouts:
+        - layout_onecol
+        - layout_twocol_section
+        - layout_threecol_section
+      denylisted_blocks:
+        'Inline blocks':
+          - 'inline_block:basic'
+      allowlisted_blocks: {  }
+      restricted_categories:
+        - 'Content fields'
+        - 'Custom block types'
+        - Forms
+        - Help
+        - 'Lists (Views)'
+        - Menus
+        - Premium
+        - System
+        - User
+        - Webform
+        - core
       whitelisted_blocks:
         'Chaos Tools': {  }
         'Content fields': {  }
@@ -54,12 +72,22 @@ third_party_settings:
           - basic
         'Inline blocks':
           - 'inline_block:basic'
+    entity_view_mode_restriction_by_region:
       allowed_layouts:
         - layout_onecol
         - layout_twocol_section
         - layout_threecol_section
-      restricted_categories:
-        - Devel
+      denylisted_blocks:
+        layout_threecol_section:
+          all_regions:
+            'Inline blocks':
+              - 'inline_block:appetizer'
+              - 'inline_block:hero'
+        layout_twocol_section:
+          all_regions:
+            'Inline blocks':
+              - 'inline_block:appetizer'
+              - 'inline_block:hero'
 id: node.page.full
 targetEntityType: node
 bundle: page

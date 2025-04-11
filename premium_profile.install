@@ -63,8 +63,8 @@ function premium_profile_install() {
     $installer->install($installed_modules);
   }
 
-  // Attach webp processor to image api optimize pipeline (optimi).
-  $optimize = ImageAPIOptimizePipeline::load('optimi');
+  // Attach webp processor to image api optimize pipeline (optimize).
+  $optimize = ImageAPIOptimizePipeline::load('optimize');
   if (!is_null($optimize)) {
     try {
       $optimize->addProcessor(['id' => 'webp_webp']);
