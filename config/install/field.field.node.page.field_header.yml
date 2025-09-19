@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.storage.node.field_header
     - node.type.page
-    - paragraphs.paragraphs_type.basic_hero
   module:
     - entity_reference_revisions
 id: node.page.field_header
@@ -20,16 +19,15 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
+    target_bundles: {  }
     negate: 0
-    target_bundles:
-      basic_hero: basic_hero
     target_bundles_drag_drop:
       accordion_item:
         weight: 4
         enabled: false
       basic_hero:
-        enabled: true
         weight: 5
+        enabled: true
       inline_hero:
         weight: 6
         enabled: false

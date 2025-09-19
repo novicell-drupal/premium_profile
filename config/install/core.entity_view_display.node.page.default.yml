@@ -18,31 +18,31 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
   layout_builder_restrictions:
     allowed_block_categories: {  }
     entity_view_mode_restriction:
+      allowed_layouts: {  }
       whitelisted_blocks: {  }
       blacklisted_blocks: {  }
-      allowed_layouts: {  }
 id: node.page.default
 targetEntityType: node
 bundle: page
 mode: default
 content:
   field_meta_tags:
-    weight: 1
+    type: metatag_empty_formatter
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: metatag_empty_formatter
+    weight: 1
     region: content
   links:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   body: true
   content_moderation_control: true

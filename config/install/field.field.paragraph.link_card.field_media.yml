@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media
+    - media.type.icon
+    - media.type.image
+    - paragraphs.paragraphs_type.link_card
+id: paragraph.link_card.field_media
+field_name: field_media
+entity_type: paragraph
+bundle: link_card
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      icon: icon
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: icon
+field_type: entity_reference

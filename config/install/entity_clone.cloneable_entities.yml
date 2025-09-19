@@ -1,5 +1,6 @@
 cloneable_entities:
   - config_split
+  - linkit_profile
   - path_alias
   - rdf_mapping
   - menu
@@ -12,7 +13,6 @@ cloneable_entities:
   - entity_form_display
   - base_field_override
   - date_format
-  - linkit_profile
   - imageapi_optimize_pipeline
   - block
   - field_storage_config

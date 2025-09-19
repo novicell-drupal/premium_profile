@@ -564,8 +564,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
             operator_limit_selection: false
             operator_list: {  }
           is_grouped: false
@@ -606,8 +604,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
             reduce: false
             operator_limit_selection: false
             operator_list: {  }
@@ -651,8 +647,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
             reduce: true
             operator_limit_selection: false
             operator_list: {  }
@@ -693,8 +687,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
             reduce: false
             operator_limit_selection: false
             operator_list: {  }

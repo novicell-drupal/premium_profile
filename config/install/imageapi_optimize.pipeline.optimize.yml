@@ -5,4 +5,10 @@ dependencies:
     - webp
 name: optimize
 label: Optimize
-processors: {  }
+processors:
+  efcdf1d4-4547-489c-9ecd-9ad374f7c8b4:
+    id: webp_webp
+    data:
+      quality: 100
+    weight: null
+    uuid: efcdf1d4-4547-489c-9ecd-9ad374f7c8b4

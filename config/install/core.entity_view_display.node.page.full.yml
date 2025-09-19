@@ -24,6 +24,7 @@ third_party_settings:
     allowed_block_categories:
       - 'Content fields'
       - 'Custom block types'
+      - Devel
       - Forms
       - Help
       - 'Inline blocks'
@@ -39,6 +40,7 @@ third_party_settings:
         - layout_onecol
         - layout_twocol_section
         - layout_threecol_section
+        - layout_hero_section
       denylisted_blocks:
         'Inline blocks':
           - 'inline_block:basic'
@@ -46,6 +48,7 @@ third_party_settings:
       restricted_categories:
         - 'Content fields'
         - 'Custom block types'
+        - Devel
         - Forms
         - Help
         - 'Lists (Views)'
@@ -77,6 +80,12 @@ third_party_settings:
         - layout_onecol
         - layout_twocol_section
         - layout_threecol_section
+        - layout_hero_section
+      allowlisted_blocks:
+        layout_hero_section:
+          all_regions:
+            'Inline blocks':
+              - 'inline_block:hero'
       denylisted_blocks:
         layout_threecol_section:
           all_regions:
@@ -88,6 +97,13 @@ third_party_settings:
             'Inline blocks':
               - 'inline_block:appetizer'
               - 'inline_block:hero'
+    unique_section_restriction:
+      unique_layouts:
+        - layout_hero_section
+    singular_block_region_restriction:
+      singular_regions:
+        layout_hero_section:
+          - content
 id: node.page.full
 targetEntityType: node
 bundle: page

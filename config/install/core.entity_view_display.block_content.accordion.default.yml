@@ -6,7 +6,7 @@ dependencies:
     - field.field.block_content.accordion.field_accordion_headline
     - field.field.block_content.accordion.field_accordion_items
     - field.field.block_content.accordion.field_accordion_show_more
-id: block_content.accordion.default
+  module:
 targetEntityType: block_content
 bundle: accordion
 mode: default
