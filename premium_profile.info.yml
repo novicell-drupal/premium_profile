@@ -104,6 +104,7 @@ install:
   - premium_core
   - premium_tools
   - premium_theme_helper
+  - premium_layout_builder_restrictions
   - view_unpublished
   - status_feed
   - styles
