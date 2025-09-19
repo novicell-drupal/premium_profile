@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_description
-    - field.field.node.page.field_header
     - field.field.node.page.field_hide_breadcrumb
     - field.field.node.page.field_hide_title
     - field.field.node.page.field_list_media
@@ -47,7 +46,6 @@ hidden:
   body: true
   content_moderation_control: true
   field_description: true
-  field_header: true
   field_hide_breadcrumb: true
   field_hide_title: true
   field_list_media: true

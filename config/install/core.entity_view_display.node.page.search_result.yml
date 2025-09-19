@@ -5,7 +5,6 @@ dependencies:
     - core.entity_view_mode.node.search_result
     - field.field.node.page.body
     - field.field.node.page.field_description
-    - field.field.node.page.field_header
     - field.field.node.page.field_hide_breadcrumb
     - field.field.node.page.field_hide_title
     - field.field.node.page.field_list_media
@@ -18,14 +17,14 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
   layout_builder_restrictions:
     allowed_block_categories: {  }
     entity_view_mode_restriction:
+      allowed_layouts: {  }
       whitelisted_blocks: {  }
       blacklisted_blocks: {  }
-      allowed_layouts: {  }
 id: node.page.search_result
 targetEntityType: node
 bundle: page
@@ -33,20 +32,19 @@ mode: search_result
 content:
   field_description:
     type: basic_string
-    weight: 0
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-  links:
-    weight: 1
+    weight: 0
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   body: true
   content_moderation_control: true
-  field_header: true
   field_hide_breadcrumb: true
   field_hide_title: true
   field_list_media: true

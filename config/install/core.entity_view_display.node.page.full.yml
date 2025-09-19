@@ -2,10 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.hero
     - core.entity_view_mode.node.full
     - field.field.node.page.body
     - field.field.node.page.field_description
-    - field.field.node.page.field_header
     - field.field.node.page.field_hide_breadcrumb
     - field.field.node.page.field_hide_title
     - field.field.node.page.field_list_media
@@ -15,11 +15,41 @@ dependencies:
   module:
     - layout_builder
     - layout_builder_restrictions
+    - premium_layout_builder_restrictions
     - user
 third_party_settings:
   layout_builder:
     enabled: true
     allow_custom: true
+    sections:
+      -
+        layout_id: layout_hero_section
+        layout_settings:
+          label: Hero
+          context_mapping: {  }
+          column_widths: ''
+          color_theme: {  }
+          column_spacing_top: section--spacing-top-none
+          column_spacing_bottom: section--spacing-bottom-none
+          hide_breadcrumbs: false
+          column_width: section--width-full
+        components:
+          d5b527bc-e111-4693-8642-771747102c75:
+            uuid: d5b527bc-e111-4693-8642-771747102c75
+            region: content
+            configuration:
+              id: 'inline_block:hero'
+              label: 'Inline block'
+              label_display: ''
+              provider: layout_builder
+              context_mapping: {  }
+              view_mode: full
+              block_id: 1
+              block_revision_id: 1
+              block_serialized: null
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
   layout_builder_restrictions:
     allowed_block_categories:
       - 'Content fields'
@@ -113,7 +143,6 @@ hidden:
   body: true
   content_moderation_control: true
   field_description: true
-  field_header: true
   field_hide_breadcrumb: true
   field_hide_title: true
   field_list_media: true
