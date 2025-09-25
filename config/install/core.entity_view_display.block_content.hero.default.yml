@@ -9,6 +9,7 @@ dependencies:
     - field.field.block_content.hero.field_overlay
     - field.field.block_content.hero.field_text
     - field.field.block_content.hero.field_text_position
+    - field.field.block_content.hero.field_title
   module:
     - styles
     - text
@@ -58,6 +59,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_overlay: true

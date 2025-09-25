@@ -5,6 +5,7 @@ dependencies:
     - core.entity_form_mode.media.media_library
     - field.field.media.video.field_media_category
     - field.field.media.video.field_media_video_file
+    - field.field.media.video.field_video_caption_file
     - media.type.video
 id: media.video.media_library
 targetEntityType: media
@@ -31,6 +32,7 @@ content:
 hidden:
   created: true
   field_media_video_file: true
+  field_video_caption_file: true
   name: true
   path: true
   status: true

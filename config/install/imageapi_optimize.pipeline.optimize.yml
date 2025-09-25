@@ -12,3 +12,9 @@ processors:
       quality: 100
     weight: null
     uuid: efcdf1d4-4547-489c-9ecd-9ad374f7c8b4
+  55cb3c9b-bb01-45ae-bc89-cd72c86d4bac:
+    id: webp_webp
+    data:
+      quality: 100
+    weight: null
+    uuid: 55cb3c9b-bb01-45ae-bc89-cd72c86d4bac
