@@ -5,6 +5,7 @@ dependencies:
     - block_content.type.video
     - field.storage.block_content.field_video_media
     - media.type.remote_video
+    - media.type.video
 id: block_content.video.field_video_media
 field_name: field_video_media
 entity_type: block_content
@@ -20,8 +21,10 @@ settings:
   handler_settings:
     target_bundles:
       remote_video: remote_video
+      video: video
     sort:
       field: _none
+      direction: ASC
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: remote_video
 field_type: entity_reference

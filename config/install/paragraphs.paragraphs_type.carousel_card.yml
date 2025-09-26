@@ -1,9 +1,9 @@
 langcode: en
 status: true
 dependencies: {  }
-id: link_card
-label: 'Link card'
+id: carousel_card
+label: 'Carousel card'
 icon_uuid: null
 icon_default: null
-description: 'Cards for a link box.'
+description: 'Cards for a content carousel.'
 behavior_plugins: {  }

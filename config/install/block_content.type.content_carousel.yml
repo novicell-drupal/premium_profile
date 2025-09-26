@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: content_carousel
+label: 'Content carousel'
+revision: false
+description: 'A block that contains a carousel of cards.'

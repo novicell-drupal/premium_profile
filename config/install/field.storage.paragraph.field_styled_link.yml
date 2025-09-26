@@ -3,15 +3,14 @@ status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.field_title
-field_name: field_title
+    - styles
+id: paragraph.field_styled_link
+field_name: field_styled_link
 entity_type: paragraph
-type: string
+type: styles_link_target
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
-module: core
+  collection: button_style
+module: styles
 locked: false
 cardinality: 1
 translatable: true

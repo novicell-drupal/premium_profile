@@ -4,4 +4,4 @@ dependencies: {  }
 id: link_box
 label: 'Link box'
 revision: false
-description: 'A block that contains a list of link cards.'
+description: 'A block that contains a list of links.'

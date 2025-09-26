@@ -2,13 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.video
-    - field.storage.block_content.field_video_subline
-id: block_content.video.field_video_subline
-field_name: field_video_subline
+    - block_content.type.content_carousel
+    - field.storage.block_content.field_title
+id: block_content.content_carousel.field_title
+field_name: field_title
 entity_type: block_content
-bundle: video
-label: Subline
+bundle: content_carousel
+label: Title
 description: ''
 required: false
 translatable: false
